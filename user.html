@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css"/>
+    <link rel="stylesheet" href="/styles/projectselipsis.css"/>
+    <title>Dashboard</title>
+</head>
+<body>
+   <div class="container">
+    <div class="sidebar">
+      <div class="userprofile">
+        
+        
+      </div>
+      <div class="nav">
+        <ul>
+            <li><a href=""><img src="images/dashboardnav.jpg"/>Dashboard</a></li>
+            <li><a  href="/login.html"><img src="images/logout.jpg"/>logout</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <div><img src="/images/header_icon.jpg" /><b>User Dashboard</b></div>
+           <div class="toggle">
+          <a class="togglenav" href=""> <img src="./images/toggle.png" height="30px" width="30px"/></a>
+           </div>
+        </div>
+       
+        <div class="cardssection">
+            <h3>Overview</h3>
+            <div class="cards">
+                  <div class="card">
+                    <div class="logo" style="display: grid;">
+                        <img src="./images/dashborad1.jpg"/>
+                        <img src="./images/dashborad1.jpg" style="margin-top: 2px; margin-bottom: 8px;"/>
+                    </div>
+                    <h4>Total Projects</h4>
+                    <h5>1</h5>
+                  </div>
+                  <div class="card">
+                    <div class="logo">
+                        <img src="/images/completed.jpg"/>
+                    </div>
+                    <h4 style="color: green;">Completed Projects</h4>
+                    <h5 style="color:green":>0</h5>
+                  </div>
+                  <div class="card">
+                    <div class="logo">
+                        <img src="./images/not_completed.jpg"/>
+                    </div>
+                    <h4 style="color: red;">Incomplete Projects</h4>
+                    <h5 style="color: red;">1</h5>
+                  </div> 
+            </div>
+        </div>
+      <div class="projectssection">
+        <div class="recentprojects">
+          <div class="projectslist">
+            <div class="addcard">
+                <h3>Assigned Project</h3>  
+            </div>
+          <div class="projectcards">
+              
+          </div>
+          </div>
+        </div>
+        <div class="userslist">
+            <div class="addcard">
+                <h3>Project List </h3>
+            </div>
+           <div class="usersdiv">
+          
+            
+           </div>
+        </div>
+      </div>
+    <div class="footer">
+            <p> &copy; Dashboard.All Rights Reserved</p>
+    </div>
+    </div>
+    
+   </div>
+   <script src="./dist/logout.js"></script>
+   <script>var exports = {};</script>
+   <script src="./dist/user.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

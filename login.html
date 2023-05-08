@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css  ">
+    
+    
+</head>
+<body class="mainbd">
+    <div class="container">
+        <h2>login here</h2>
+        <br>
+        <form action="" class="login-form" id="loginform">
+            <div class="input-group">
+                <i class="fa fa-user icon"></i>
+                <input type="text" id="loginusername" class="input" placeholder="USERNAME">
+                <span class="error-message" id="usernamespan"></span>
+            </div>
+            <br>
+            <div class="input-group">
+                
+                <i class="fa fa-lock icon"></i>
+                <input type="password" id="loginpassword" class="input" placeholder="PASSWORD">
+                <span class="error-message" id="passwordspan"></span>
+            </div>
+            <br>
+            <button class="button" id="loginbtn" type="submit">LOGIN</button>
+            <div class="input-directions">
+                <p id="lastlyp">Dont have an account? 
+                    <a id="lastlya" href="/register.html">register</a>
+                </p>
+                <!-- <p id="lastlyp"><a href="#">Forgot password?</a></p> -->
+            </div>
+        </form>
+    </div>
+    <script defer src="./dist/login.js"></script>
+
+</body>
+</html>

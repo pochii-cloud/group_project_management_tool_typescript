@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "username": "mcdonalds",
+      "password": "mcpassword",
+      "id": 1
+    },
+    {
+      "username": "admin",
+      "password": "adpassword",
+      "id": 3
+    },
+    {
+      "username": "mark",
+      "password": "Test@2023",
+      "id": 4
+    },
+    {
+      "username": "mark25",
+      "password": "Test@2023",
+      "id": 5
+    }
+  ],
+  "Projects": [
+    {
+      "projectname": "testname",
+      "projectdescription": "test description",
+      "assigneduser": "mcdonald25",
+      "status": "pending",
+      "id": 33
+    },
+    {
+      "projectname": "testprojectmhfgf",
+      "projectdescription": "test description",
+      "assigneduser": "mark",
+      "status": "pending",
+      "id": 34
+    }
+  ]
+}

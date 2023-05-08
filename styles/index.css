@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ion-icon {
+  font-size: 30px;
+}
+.sidebar.active{
+  width: 200px;
+}
+.container {
+  display: flex;
+  /* align-items: center;
+  justify-content: center;
+  height: 100%; */
+}
+.sidebar {
+  width: 15%;
+  min-height: 100vh;
+  background-color: #2a37b9;
+  position: relative;
+}
+.sidebar .userprofile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 30%;
+  background-color: #010c8f;
+  color: white;
+}
+.sidebar .userprofile img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+.sidebar .nav {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  color: white;
+  padding: 10px;
+}
+.sidebar .nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.sidebar .nav ul li img {
+  margin-right: 3px;
+  height: 15px;
+  width: 15px;
+}
+.sidebar .nav ul li ion-icon {
+  margin-right: 3px;
+  font-size: 20px;
+}
+.main {
+  width: 85%;
+  background-color: #fefeff;
+}
+.header {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 20px;
+  background-color: #f8f9f9;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 0.2);
+  color: black;
+  padding: 10px;
+  position: fixed;
+}
+.header .toggle{
+  margin-right: 15px;
+  display: none;
+}
+.cardssection {
+  margin-top: 50px;
+}
+.cardssection h3 {
+  color: grey;
+  margin-left: 5%;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 10px;
+  width: 20%;
+  height: 100px;
+  margin: 15px;
+  background-color: #e1e8ff;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 0.2);
+}
+
+.card .logo ion-icon {
+  font-size: 40px;
+}
+.projectssection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+.recentprojects {
+  width: 45%;
+  /* border: 2px solid red; */
+  margin: 10px;
+}
+.userslist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 45%;
+  /* border: 2px solid black; */
+}
+.projectslist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.addcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.addcard h3 {
+  color: gray;
+}
+.projectcards {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #e1e8ff;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 0.2);
+}
+.projectcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+.projectcard .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projectcard .icons ion-icon {
+  font-size: 20px;
+}
+.projectcard .icons ion-icon:hover {
+  cursor: pointer;
+  size: 25px;
+}
+.usersdiv {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #e1e8ff;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 0.2);
+  padding: 10px;
+}
+.userscard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.userscard ion-icon {
+  font-size: 30px;
+}
+.userscard h5 ion-icon {
+  font-size: 20px;
+}
+.userscard h5 ion-icon:hover {
+  font-size: 20px;
+}
+
+.footer {
+  margin-top: 20vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #010c8f;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .header{
+    width: 100%;
+  }
+  .header .toggle{
+   display: block;
+  }
+  .sidebar {
+    width: 0%;
+    background-color: white;
+  }
+  .sidebar .userprofile {
+    display: none;
+  }
+  .sidebar .nav {
+    display: none;
+  }
+  .cards{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .card {
+    width: 80vw;
+  }
+  .projectssection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+  .recentprojects {
+    width: 80%;
+  }
+  .userslist {
+    width: 80%;
+    margin-bottom: 10vh;
+  }
+  .projectcard {
+    width: 100%;
+  }
+  .footer {
+    width: 100vw;
+  }
+}
